@@ -7,9 +7,7 @@ nav {
 
 &__logo {
 
-
  img {
-
  }
 
 }
@@ -32,12 +30,27 @@ nav {
 }
 
 
+}
 
-a {
-  font-size: $font-small;
+&__links{
+
+  a {
+    font-size: $font-small;
+   color: $lightGrayishBlue;
+
+   &:not(:last-child) {
+     margin-right: 32px;
+   }
+  }
 
 }
 
+&__cta {
+ font-size: $font-small;
+ color: $white;
+
 }
+
+
 
 }

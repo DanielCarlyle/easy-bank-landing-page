@@ -17,10 +17,8 @@ body {
  font-weight: 300;
 }
 
-
 a, a:visited, a:hover {
   text-decoration: none;
-   color: $lightGrayishBlue;
 }
 
 //Flexbox Helper Classes
@@ -43,10 +41,25 @@ a, a:visited, a:hover {
 //Buttons
 button, .button {
   background: linear-gradient(to-right, $limeGreen, $brightCyan);
-  padding: 1rem 1.875rem;
+  padding: 0.875rem 1.875rem;
   border-radius: 50px;
   cursor: pointer;
   border: 0;
   color: $white;
   font-weight: 400;
+}
+
+//Visibility - Helper Classes
+
+.hide-for-mobile {
+  @include $breakpoints-down(medium) {
+    display: none;
+  }
+}
+
+
+.hide-for-desktop {
+  @include $breakpoints-up(large) {
+    display: none;
+  }
 }
