@@ -1,7 +1,6 @@
 html {
 font-size: 100%;
 box-sizing: border-box;
-
 }
 
 *, *::before, *::after {
@@ -13,13 +12,20 @@ body {
   padding: 0;
  font-family: 'Public Sans', Open Sans, Sans-serif;
  line-height: 1.3;
+ font-size: $font-med;
+ color: $grayishBlue;
+ font-weight: 300;
 }
 
+
+a, a:visited, a:hover {
+  text-decoration: none;
+   color: $lightGrayishBlue;
+}
 
 //Flexbox Helper Classes
 .flex {
   display: flex;
-
 
 &-js-space-between {
   justify-content: space-between;
@@ -32,6 +38,15 @@ body {
 &-ai-c {
   align-items: center;
 }
+}
 
-
+//Buttons
+button, .button {
+  background: linear-gradient(to-right, $limeGreen, $brightCyan);
+  padding: 1rem 1.875rem;
+  border-radius: 50px;
+  cursor: pointer;
+  border: 0;
+  color: $white;
+  font-weight: 400;
 }

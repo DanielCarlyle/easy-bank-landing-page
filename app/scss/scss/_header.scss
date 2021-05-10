@@ -1,5 +1,10 @@
 .header {
 
+nav {
+  padding: 24px 20px;
+}
+
+
 &__logo {
 
 
@@ -19,8 +24,19 @@
   width: 26px;
   height: 2px;
   background-color: $darkBlue;
+
+ &:not(:last-child) {
+   margin-bottom: 3px;
+ }
+
 }
 
+
+
+a {
+  font-size: $font-small;
+
+}
 
 }
 
